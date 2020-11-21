@@ -83,10 +83,10 @@ class RegisterScreen extends BaseComponent {
             <h1>Flappy Bird Register</h1>
             <img src="./images/bird.png">
             <form class='form-register'>
-                <input-wrapper class='name' label='Name (*)' type='text' error='${this.state.errors.name}' value='${this.state.data.name}'></input-wrapper>
-                <input-wrapper class='email' label='Email (*)' type='email' error='${this.state.errors.email}' value='${this.state.data.email}'></input-wrapper>
-                <input-wrapper class='password' label='Password (*)' type='password' error='${this.state.errors.password}' value='${this.state.data.password}'></input-wrapper>
-                <input-wrapper class='confirm-password' label='Confirm password (*)' type='password' error='${this.state.errors.confirmPassword}'></input-wrapper>
+                <input-wrapper class='name' label='Name' type='text' error='${this.state.errors.name}' value='${this.state.data.name}'></input-wrapper>
+                <input-wrapper class='email' label='Email' type='email' error='${this.state.errors.email}' value='${this.state.data.email}'></input-wrapper>
+                <input-wrapper class='password' label='Password' type='password' error='${this.state.errors.password}' value='${this.state.data.password}'></input-wrapper>
+                <input-wrapper class='confirm-password' label='Confirm password' type='password' error='${this.state.errors.confirmPassword}'></input-wrapper>
                 <br>
                 <button class='btn-register'>Register</button>
                 <br>
