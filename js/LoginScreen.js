@@ -81,7 +81,6 @@ class LoginScreen extends BaseComponent {
         <h1>Flappy Bird Login</h1>
         <img src="./images/bird.png">
             <form class='form-login'>
-                <i class="fas fa-envelope"></i>
                 <input-wrapper class='email' label='Email' type='email' required error='${this.state.errors.email}' value='${this.state.data.email}'></input-wrapper>
                 <input-wrapper class='password' label='Password' type='password' error='${this.state.errors.password}' value='${this.state.data.password}'></input-wrapper>
                 <button class='btn-login'>Log in</button>
