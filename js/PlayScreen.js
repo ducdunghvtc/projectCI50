@@ -151,7 +151,7 @@ class PlayScreen extends BaseComponent {
         ${style}
         
         <section class='play-screen'>
-            <img src="./img/logo.png">
+            <img src="./images/bird.png">
             <form class='form-play'>
                 <h2>Hello, ${currentPlayer.name}</h2>
                 <h2>Your Current Highscore Is:  ${currentPlayer.hightScores}</h2>

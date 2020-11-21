@@ -10,22 +10,22 @@ const style = `
         text-transform: uppercase;
         padding: 5px;
         font-size: 20px;
-        color: black;
+        color: #3d0080;
     }
     .input-main {
         font-size: 20px;
-        border: 2px solid black;
+        border: 1px solid #3d0080;
         width: 35%;
         height: 30px;
         margin-top: 4px;
-        border-radius: 6px;
-        background: transparent;
+        border-radius: 20px;
+        background: #70c5ce;
         justify-content: center;
     }
     .input-error {
         font-size: 14px;
         padding: 3px;
-        color: red;
+        color: 	red;
     }
 
     .input-label:focus, .input-main:focus, .input-error:focus {

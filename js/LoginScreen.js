@@ -30,7 +30,6 @@ const style = /* html */ `
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 15em 0 1em;
         overflow: auto;
 
     }
@@ -39,10 +38,10 @@ const style = /* html */ `
         color: #ffffff;
         font-family: Titillium Web, sans-serif;
         font-size: 20px;
-        background: #4EFF0B;
-        color: #001427;
+        background: #0bffe8;
+        color: white;
         border: none;
-        border-radius: 5px;
+        border-radius: 20px;
         outline: none;
         width:100px;
         border: 0;
@@ -82,6 +81,7 @@ class LoginScreen extends BaseComponent {
         <h1>Flappy Bird Login</h1>
         <img src="./images/bird.png">
             <form class='form-login'>
+                <i class="fas fa-envelope"></i>
                 <input-wrapper class='email' label='Email' type='email' required error='${this.state.errors.email}' value='${this.state.data.email}'></input-wrapper>
                 <input-wrapper class='password' label='Password' type='password' error='${this.state.errors.password}' value='${this.state.data.password}'></input-wrapper>
                 <button class='btn-login'>Log in</button>
@@ -130,10 +130,8 @@ class LoginScreen extends BaseComponent {
                 } else {
                     let currentPlayer = response.docs[0].data();
                     localStorage.setItem('Current-Player',JSON.stringify(currentPlayer));
-                    swal("Successfully!", "Welcome to Caro Zone 🐱‍🏍", "success")
-                        .then(() => {
                             router.navigate("#!/play");
-                        });
+
                 }
             }
 

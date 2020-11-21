@@ -29,17 +29,16 @@ const style = `
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 15em 0 1em;
-    }
 
+    }
     .btn-register {
         color: #ffffff;
         font-family: Titillium Web, sans-serif;
         font-size: 20px;
-        background: #4EFF0B;
-        color: #001427;
+        background: #0bffe8;
+        color: white;
         border: none;
-        border-radius: 5px;
+        border-radius: 20px;
         outline: none;
         width:100px;
         border: 0;
@@ -89,7 +88,7 @@ class RegisterScreen extends BaseComponent {
                 <input-wrapper class='password' label='Password (*)' type='password' error='${this.state.errors.password}' value='${this.state.data.password}'></input-wrapper>
                 <input-wrapper class='confirm-password' label='Confirm password (*)' type='password' error='${this.state.errors.confirmPassword}'></input-wrapper>
                 <br>
-                <button class='btn-register'>REGISTER</button>
+                <button class='btn-register'>Register</button>
                 <br>
                 <a href="#!/login">Already have an account? Log in</a>
             </form>
@@ -152,7 +151,7 @@ class RegisterScreen extends BaseComponent {
 
                 if (response.empty) {
                     await firebase.firestore().collection('users').add(this.state.data);
-                    swal("Sign Up Successfully!", "Relax With Caro Zone 🐱‍🏍", "success");
+                    swal("Đăng ký thành công!", "Vui lòng ấn ok để login");
                     router.navigate('/login');
                 } else {
                     swal('Your email has already been used!');
