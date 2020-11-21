@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
     <title>Flappy Bird</title>
+    <meta name="viewport" content="width= device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="./images/bird.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+            apiKey: "AIzaSyC-Yx8piK7r3yjCyBEjZWK3p_qpIKCpDZM",
+            authDomain: "ci50-33983.firebaseapp.com",
+            databaseURL: "https://ci50-33983.firebaseio.com",
+            projectId: "ci50-33983",
+            storageBucket: "ci50-33983.appspot.com",
+            messagingSenderId: "725799760996",
+            appId: "1:725799760996:web:58e3390767a4a8ed7fdb71",
+            measurementId: "G-B4KDQSCMXR"
+        };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="//unpkg.com/navigo@6"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
-   <h3>FlappyBird</h3>
+   <h3></h3>
    
    <canvas id="canvas" width="288" height="512"></canvas>
    
-   <script src="flappyBird.js"></script>
+   <script src="./js/flappyBird.js"></script>
   </body>
 </html>
