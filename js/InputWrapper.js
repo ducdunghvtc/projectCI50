@@ -25,7 +25,7 @@ const style = `
     .input-error {
         font-size: 14px;
         padding: 3px;
-        color: 	#4EFF0B;
+        color: red;
     }
 
     .input-label:focus, .input-main:focus, .input-error:focus {
