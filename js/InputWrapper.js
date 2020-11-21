@@ -7,8 +7,6 @@ const style = `
         color: black;
     }
     .input-label {
-        text-transform: uppercase;
-        padding: 5px;
         font-size: 20px;
         color: #3d0080;
     }
